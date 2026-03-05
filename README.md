@@ -26,11 +26,22 @@ claude mcp add --transport stdio kindly-web-search \
   kindly-web-search-mcp-server start-mcp-server
 ```
 
-## Prerequisites
+## Setup
 
-- One of: `SERPER_API_KEY`, `TAVILY_API_KEY`, or `SEARXNG_BASE_URL`
-- Chromium-based browser for page content extraction (set `KINDLY_BROWSER_EXECUTABLE_PATH` if not auto-detected)
-- Optional: `GITHUB_TOKEN` for GitHub content
+You need your own API key from one of the supported search providers. Add it to your shell profile (e.g. `~/.zshrc` or `~/.bashrc`):
+
+```bash
+# Pick one search provider:
+export SERPER_API_KEY="your-key-here"       # https://serper.dev
+# OR export TAVILY_API_KEY="your-key-here"  # https://tavily.com
+# OR export SEARXNG_BASE_URL="https://your-instance.example.org"
+
+# Optional - needed for page content extraction:
+export KINDLY_BROWSER_EXECUTABLE_PATH="/path/to/chromium-or-chrome"
+
+# Optional - improves GitHub content fetching:
+export GITHUB_TOKEN="your-token-here"
+```
 
 ## Tools
 
