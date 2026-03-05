@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "kindly-web-search": {
+    "cooler-kindly-web-search": {
       "command": "uvx",
       "args": [
         "--from",

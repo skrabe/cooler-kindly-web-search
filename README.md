@@ -1,4 +1,4 @@
-# kindly-web-search
+# cooler-kindly-web-search
 
 Claude Code plugin wrapper for an optimized fork of [kindly-web-search-mcp-server](https://github.com/Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server).
 
@@ -12,13 +12,13 @@ Fork with the extraction changes: [skrabe/kindly-web-search-mcp-server](https://
 
 ```bash
 /plugin marketplace add skrabe/skrabe-plugins
-/plugin install kindly-web-search@skrabe-plugins
+/plugin install cooler-kindly-web-search@skrabe-plugins
 ```
 
 ## Install as standalone MCP server
 
 ```bash
-claude mcp add --transport stdio kindly-web-search \
+claude mcp add --transport stdio cooler-kindly-web-search \
   -e SERPER_API_KEY="$SERPER_API_KEY" \
   -e GITHUB_TOKEN="$GITHUB_TOKEN" \
   -e KINDLY_BROWSER_EXECUTABLE_PATH="$KINDLY_BROWSER_EXECUTABLE_PATH" \
